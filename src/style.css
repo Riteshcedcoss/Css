@@ -82,6 +82,17 @@ body {
 #orange-text {
   color: orange;
 }
+:root {
+  --red-color: red;
+  --penguin-belly: pink;
+}
+@media (max-width: 350px) {
+  :root {
+  
+    --penguin-size:200px;
+    --penguin-skin:black;
+  }
+}
 .penguin {
   --penguin-belly: white;
   --penguin-skin: gray;
@@ -252,10 +263,7 @@ body {
 .penguin * {
   position: absolute;
 }
-:root {
-  --red-color: red;
-  --penguin-belly: pink;
-}
+
 .red-box {
   background: red;
   background: var(--red-color);
